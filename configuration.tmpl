@@ -1,0 +1,13 @@
+app = "team-auth-cache"
+description =  "cache per-team package and member information"
+processes = 4
+start =  "./bin/team-auth-cache.js"
+
+[environment]
+    NODE_ENV = "{{node_env}}"
+    METRICS = "{{metrics_url}}"
+    SERVICE_NAME = "team-info-cache"
+    REDIS = "{{team_info_cache_redis}}"
+    USER_ACL_URL = "{{user_acl_urls}}"
+    PORT = "808%i"
+

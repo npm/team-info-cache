@@ -1,0 +1,31 @@
+{
+  "name": "@npm/team-info-cache",
+  "version": "1.0.0",
+  "description": "Cache layer for getting team information with passthrough to user-acl-two",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Early and Jeff Lembeck",
+  "license": "ISC",
+  "dependencies": {
+    "@npm/knork": "^7.0.2",
+    "@npm/user-acl-client": "^3.23.0",
+    "bistre": "^1.0.1",
+    "bluebird": "^3.5.0",
+    "bole": "^3.0.2",
+    "dotenv": "^4.0.0",
+    "npm-user-validate": "^1.0.0",
+    "redis": "^2.7.1",
+    "redis-url": "^1.2.1",
+    "validate-npm-package-name": "^3.0.0",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "@npmcorp/mkenv": "^1.2.2",
+    "request": "^2.81.0",
+    "standard": "^10.0.2",
+    "tap": "^10.7.0"
+  }
+}
