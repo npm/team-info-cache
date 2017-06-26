@@ -25,10 +25,10 @@ const routes = routing`
 module.exports = (opts = {}) => {
   const server = http.createServer().listen(port)
   const middleware = [
-    LoggingMiddleware,
-    MetricsMiddleware,
-    MonitorMiddleware,
-    CommonMiddleware
+    LoggingMiddleware(),
+    MetricsMiddleware(),
+    MonitorMiddleware(),
+    CommonMiddleware()
   ]
 
   const getServer = knork(process.env.SERVICE_NAME, server, routes, middleware, {isExternal: false})
